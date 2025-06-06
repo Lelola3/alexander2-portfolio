@@ -1,0 +1,81 @@
+import React from "react";
+
+export default function Portfolio() {
+  return (
+    <div className="font-sans bg-white text-gray-900">
+      {/* Hero Section */}
+      <section className="text-center py-20 px-4 bg-gradient-to-r from-sky-500 to-indigo-600 text-white">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">Hi, I’m Alexander Somtochukwu 👋</h1>
+        <p className="text-xl max-w-3xl mx-auto">I help C-Suite leaders, tech brands & founders streamline operations, manage communities, and convert content into revenue.</p>
+        <div className="mt-8 flex justify-center gap-4">
+          <button className="bg-white text-sky-600 font-semibold px-6 py-3 rounded-xl shadow">Let’s Work Together</button>
+          <button className="border border-white px-6 py-3 rounded-xl">View My Work</button>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="py-16 px-6 max-w-5xl mx-auto">
+        <h2 className="text-3xl font-bold mb-4">Helping Visionaries Stay Ahead, One System at a Time.</h2>
+        <p className="text-lg">I'm a Virtual Assistant and Community Manager who works with C-Suite executives, tech brands, startup founders, and entrepreneurs. I bring a powerful mix of executive support, content creation, and community-building expertise to keep your day running smoothly, your audience engaged, and your brand growing. I don’t just complete tasks—I create systems that work, messages that convert, and communities that thrive.</p>
+      </section>
+
+      {/* Services Section */}
+      <section className="bg-gray-100 py-16 px-6">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12">What I Do Best</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white p-6 rounded-2xl shadow">
+              <h3 className="text-xl font-semibold mb-2">Executive Assistance</h3>
+              <ul className="list-disc pl-5 space-y-1">
+                <li>Inbox & calendar management</li>
+                <li>Travel, scheduling & workflow support</li>
+                <li>Bottleneck elimination & operations coordination</li>
+              </ul>
+            </div>
+            <div className="bg-white p-6 rounded-2xl shadow">
+              <h3 className="text-xl font-semibold mb-2">Content Strategy & Creation</h3>
+              <ul className="list-disc pl-5 space-y-1">
+                <li>Conversion-driven content writing</li>
+                <li>Newsletters, blogs, captions</li>
+                <li>AI-assisted content creation</li>
+              </ul>
+            </div>
+            <div className="bg-white p-6 rounded-2xl shadow">
+              <h3 className="text-xl font-semibold mb-2">Community Management</h3>
+              <ul className="list-disc pl-5 space-y-1">
+                <li>Community onboarding & engagement</li>
+                <li>Events, live sessions, check-ins</li>
+                <li>Member support and CRM management</li>
+              </ul>
+            </div>
+            <div className="bg-white p-6 rounded-2xl shadow">
+              <h3 className="text-xl font-semibold mb-2">Productivity Systems Setup</h3>
+              <ul className="list-disc pl-5 space-y-1">
+                <li>Tool optimization (Notion, Asana, Trello)</li>
+                <li>Smart automation with AI tools</li>
+                <li>CRM, email & comms setup</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-16 px-6 max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-6">Let’s Talk</h2>
+        <p className="text-center mb-6">Interested in working together? Have a project, launch, or team that needs streamlining? Let’s connect.</p>
+        <form className="grid gap-4">
+          <input type="text" placeholder="Your Name" className="p-3 border border-gray-300 rounded-xl" />
+          <input type="email" placeholder="Your Email" className="p-3 border border-gray-300 rounded-xl" />
+          <textarea placeholder="Your Message" rows="5" className="p-3 border border-gray-300 rounded-xl"></textarea>
+          <button className="bg-sky-600 text-white px-6 py-3 rounded-xl">Send Message</button>
+        </form>
+      </section>
+
+      {/* Footer */}
+      <footer className="text-center py-6 bg-gray-200 text-sm">
+        <p>&copy; {new Date().getFullYear()} Alexander Somtochukwu. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+}
